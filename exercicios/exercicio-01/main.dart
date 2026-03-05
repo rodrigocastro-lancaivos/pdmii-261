@@ -8,5 +8,9 @@ void main() {
   print(idade);
 
   //questao-03
-  // da
+  String cidade = "Fortaleza";
+  int idade2 = 200;
+  double temperatura = 27;
+
+  print("cidade $cidade com $idade2 anos a $temperatura graus e temperatura");
 }
