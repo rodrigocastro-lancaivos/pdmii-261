@@ -62,4 +62,3 @@ uma frase com essas informações.
 19. Crie um programa que calcule o preço final de um produto considerando preço inicial,
 desconto e imposto. Use 'final' para armazenar o resultado.
 20. Crie um programa que utilize 'var', 'final', 'const' e uma
-
