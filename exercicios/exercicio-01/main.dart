@@ -113,7 +113,17 @@ void main() {
   int inteiro = int.parse(texto);
 
   //questao-19
-  
+  double calcuPrecos(double inicial, double desconto, double imposto){
+    final double valor = inicial - desconto + imposto; 
+    return valor;
+  }
+  print(calcuPrecos(250, 30, 50));
 
   //questao-20
+  var uNome = "caioo7";
+  late bool uStatus;
+  const int uId = 1001;
+  String? duvida;
+
+  print("Finalmente posso descansar!\nO Sr. $uNome verificado (${uStatus = true}) ficará no meu lugar, qualquer coisa falar com o id: $uId, alguma dúvida?\n$duvida.");
 }
