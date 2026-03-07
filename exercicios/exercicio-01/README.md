@@ -61,4 +61,5 @@ uma frase com essas informações.
 18. Crie uma variável String contendo '25' e converta para int.
 19. Crie um programa que calcule o preço final de um produto considerando preço inicial,
 desconto e imposto. Use 'final' para armazenar o resultado.
-20. Crie um programa que utilize 'var', 'final', 'const' e uma
+20. Crie um programa que utilize 'var', 'final', 'const' e uma variável nullable para montar e
+imprimir um perfil de usuário no console.

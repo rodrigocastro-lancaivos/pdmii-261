@@ -31,4 +31,89 @@ void main() {
   apelido = "cuquita";
 
   print("Depois apelido: $apelido");
+
+  //questao-06
+  int? numero;
+  if (numero == null) {
+    print("Número não definido");
+  };
+
+  //questao-07
+  String? Nome;
+  if (Nome == null){
+    print("Nome é null, imprimindo com valor padrão: ${Nome = 'Usuário'}");
+  };
+  
+  //questao-08
+  String? email;
+  email = 'rodrigo.castro05@aluno.ifce.edu.br';
+
+  print(email!);
+
+  //questao-09
+  final pais = 'Brasil';
+  print(pais);
+
+  //questao-10
+  int num1 = 5;
+  int num2 = 6;
+  final soma = num1 + num2;
+
+  //questao-11
+  final inalteravel = true;
+  print(!inalteravel);
+  /* se aparecer false é interessante porque teoricamente a variavel
+  final nao poderia ser alterada, mas para garantir a integridade do teste farei outra que nao seja bool */
+
+  final inalteravel2 = "Joao";
+  /*try {
+    inalteravel2 = "alteracao";
+    print(inalteravel2);
+    } catch (e) {
+      print("Ocorreu um erro: $e");
+    }*/
+  //o codigo acima nao funciona pois ocorre um erro em tempo de execucao, ja que final nao 
+  //pode ser modificado, entao ficara comentado para a correta realizacao do resto dos exercicios.
+
+  //questao-12
+  const double PI = 3.141559;
+  print(PI);
+
+  //questao-13
+  double acirculo = PI * 5*5;
+  print(acirculo);
+
+  //questao-14
+  const listaconst = ["python", "dart", "java"];
+  for (String i in listaconst) {
+    print(i);
+  }
+
+  //questao-15
+  late String mensagem;
+  //print(mensagem);
+  mensagem = "O late garante que a variavel sera inicializada depois antes de ser lida";
+  print(mensagem);
+
+  //questao-16
+  late int resultado;
+  int quadrado (int num1) {
+    return resultado = num1*num1;
+  }
+  quadrado(num1);
+  print(resultado);
+
+  //questao-17
+  bool estudante = true;
+  double altura = 1.75;
+  print("Você é um estudante $estudante, seu nome é $nome, tem $idade anos e uma altura de $altura metros");
+
+  //questao-18
+  String texto = '25';
+  int inteiro = int.parse(texto);
+
+  //questao-19
+  
+
+  //questao-20
 }
