@@ -3,12 +3,22 @@ No primeiro exercício são duas listas de 20 questões cada, a primeria parte a
 Listas de Exercícios – Variáveis na Linguagem Dart
 Parte 1 — Lista de Questões Teóricas (Perguntas Abertas)
 1. Explique o que é uma variável na linguagem Dart e qual é sua função em um programa.
+Variavel em dart sao informacoes que sao armazenadas em locais de memoria que podem ser contantes ou nao sua funcionalidade no programa é guardar essas informacoes para serem utilizadas/consultadas mais tarde.
+
 2. Em Dart, o que significa dizer que uma variável armazena uma referência a um objeto?
+significa dizer que podemos acessar essa instancia a partir dessa variavel, analogamente é um atalho do sistema operacional.
+
 3. Qual é a diferença entre declarar uma variável usando 'var' e declarar explicitamente o
 tipo da variável (por exemplo, 'String name')?
+Na pratica existem duas formas, uma que se informa o tipo e outra em que o compilador tem que adivinhar qual é o tipo. Na pratica funcionam igualmente, mas variam na forma como sao declaradas.
+
 4. Explique como funciona a inferência de tipos quando uma variável é declarada com 'var'.
+Quando se usa var nao se pode fazer uma inferencia de tipo direta como no exemplo acima, entao o compilador deve adivinnhar o tipo da variavel a partir do valor que se atribui a ela. Porém se nao for atribuido nenhum valor ao declarar uma variavel usando var essa variavel é do tipo dynamic, e futuramente podera mudar o tipo de seu valor.
+
 5. Em quais situações pode ser útil declarar uma variável usando o tipo 'Object' ou
 'dynamic'?
+
+
 6. Explique o conceito de null safety na linguagem Dart e qual problema ele busca evitar.
 7. Qual a diferença entre um tipo nullable (String?) e um tipo non-nullable (String)?
 8. O que acontece se uma variável non-nullable for utilizada antes de ser inicializada?
@@ -16,10 +26,17 @@ tipo da variável (por exemplo, 'String name')?
 10. Explique por que a linguagem exige que variáveis non-nullable sejam inicializadas antes
 de seu uso.
 11. Explique o propósito do modificador 'late' em Dart.
+Poder atribuir um valor para a variavel depois de ser declarada, mas antes de ser utilizada dentro do codigo.
+
 12. Em quais situações o uso de 'late' pode ser necessário em variáveis de classe ou top-
 level?
+O modificador
+late é para declarar variáveis não anuláveis (non-nullable) que não são inicializadas imediatamente, mas que terão um valor antes de serem usadas. Ele é para contornar restrições de null safety quando a inicialização depende de dados disponíveis apenas em tempo de execução. 
+
 13. Qual é a diferença entre uma variável 'late' inicializada na declaração e uma 'late'
 inicializada posteriormente?
+
+
 14. O que acontece em tempo de execução se uma variável 'late' for utilizada antes de
 receber um valor?
 15. Explique a diferença conceitual entre variáveis declaradas com 'final' e 'const'.
