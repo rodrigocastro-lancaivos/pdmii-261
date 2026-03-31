@@ -17,38 +17,61 @@ Quando se usa var nao se pode fazer uma inferencia de tipo direta como no exempl
 
 5. Em quais situações pode ser útil declarar uma variável usando o tipo 'Object' ou
 'dynamic'?
-
+Ambas situações nos dão uma maior liberdade, dynamic ignora a tipagem em tempo de execucao enquanto objeto sabemos que sera um objeto entretando há uma liberdade maior por ser um objeto, so depende de que classe, logo pode ter atributos de diferentes tipos.
 
 6. Explique o conceito de null safety na linguagem Dart e qual problema ele busca evitar.
+Null Safety não permite que uma variavel tenha tipo null a menos que eu assim declare, ele vai tentar evitar erros em tempo de execucao, ja que o tipo null sem querer declarado quase sempre vai gerar isso. Ou pelo menos um erro de logica.
+
 7. Qual a diferença entre um tipo nullable (String?) e um tipo non-nullable (String)?
+nullable permite que a variavel seja nula, enquanto que non-nullable nao permite que essa variavel seja do tipo nulo
+
 8. O que acontece se uma variável non-nullable for utilizada antes de ser inicializada?
+Gerará um erro, pois nao é permitido que ela seja null ja que é non-nullable e segundo a regra de null safety (livre de nulo) nao permitira que uma variavel null prossiga.
+
 9. Descreva o comportamento padrão de variáveis nullable não inicializadas em Dart.
+se ela nao for inicializada ela receberá por padrão o valo null pelo compilador.
+
 10. Explique por que a linguagem exige que variáveis non-nullable sejam inicializadas antes
 de seu uso.
+Para evitar erros, ja que se ela ainda nao foi inicializada ela na pratica é null, contudo essa variavel é non-nullable e essa afirmacao nao pode ser verdadeira e o codigo nao pode seguir assim. Para evitar o erro em tempo de execucao do compilador tentar arranjar um espaco na memoria que ainda nao existe, nulo.
+
 11. Explique o propósito do modificador 'late' em Dart.
 Poder atribuir um valor para a variavel depois de ser declarada, mas antes de ser utilizada dentro do codigo.
 
 12. Em quais situações o uso de 'late' pode ser necessário em variáveis de classe ou top-
 level?
-O modificador
-late é para declarar variáveis não anuláveis (non-nullable) que não são inicializadas imediatamente, mas que terão um valor antes de serem usadas. Ele é para contornar restrições de null safety quando a inicialização depende de dados disponíveis apenas em tempo de execução. 
+O modificador late é para declarar variáveis não anuláveis (non-nullable) que não são inicializadas imediatamente, mas que terão um valor antes de serem usadas. Ele é para contornar restrições de null safety quando a inicialização depende de dados disponíveis apenas em tempo de execução. 
 
 13. Qual é a diferença entre uma variável 'late' inicializada na declaração e uma 'late'
 inicializada posteriormente?
-
+se inicializada na declaracao o compilador so "lera" o valor atribuido na hora que chamar a variavel, mas se atribuida somente depois funcionara como foi previsto e quando se atribuir essa variavel sera colocada com seu respectivo valor.
 
 14. O que acontece em tempo de execução se uma variável 'late' for utilizada antes de
 receber um valor?
+Ocorre um erro pois isso não é para ser possível.
+
 15. Explique a diferença conceitual entre variáveis declaradas com 'final' e 'const'.
+const é para quando é em tempo de compilação, final é para quando é em tempo de execução
+
 16. Por que uma variável 'const' deve ser inicializada com um valor conhecido em tempo de
 compilação?
+Deve primeiro pelo motivo conceitual, conceitualmente é como se faz. Ocorrera um erro pois nao foi informado se essa variavel pode ser nula. 
+
 17. Uma variável 'final' pode ter seu valor alterado após a inicialização? Justifique.
+Nao pode, pois em dart a palavra reservada final funciona como a const em que tem apenas uma single-assigment, nao se pode mudar a referencia dessa variavel depois de atribuido o valor. 
+
 18. Explique a diferença entre imutabilidade da referência e imutabilidade do objeto ao usar
 'final'.
+Na imutabilidade da referencia voce esta garantindo que o valor da variavel permaneca o mesmo, diferente no caso do objeto em que voce garante que o objeto seja o mesmo, mas alterar o estado interno do objeto continua totalmente possivel.
+
 19. O que são wildcard variables (_) em Dart e em quais contextos elas podem ser
 utilizadas?
+As wildcard variables (variáveis curinga) em Dart, representadas pelo caractere de sublinhado (_), são marcadores de posição (placeholders) usados para declarar variáveis locais ou parâmetros que não serão utilizados no código.
+
 20. Discuta boas práticas recomendadas para declaração de variáveis locais em Dart,
 especialmente o uso de 'var' e 'final'.
+var somente se nao souber qual tipo colocar.
+final tem que seguir com o conceito em tempo de execucao.
 
 Parte 2 — Exercícios Práticos de Programação em Dart
 1. Crie um programa que declare uma variável 'nome' do tipo String e atribua seu nome a
