@@ -25,7 +25,7 @@ class Funcionario {
 
       Map<String, dynamic> toJson() => {
         'nome': _nome,
-        'preco': _dependentes
+        'dependentes': _dependentes
       };
 }
 
@@ -40,7 +40,7 @@ class EquipeProjeto {
 
     Map<String, dynamic> toJson() => {
         'nome': _nomeProjeto,
-        'preco': _funcionarios
+        'funcionarios': _funcionarios
       };
 }
 
