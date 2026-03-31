@@ -1,0 +1,1 @@
+Todas as instrucoes estao no arquivo, nos comentarios que vieram mostrando o que fazer na questao.
