@@ -31,8 +31,6 @@ void main () async {
         socket.destroy();
       }
     });
-  
-    socket.close();
 
   } catch (e) {print("Erro ao conectar $e");}
 
