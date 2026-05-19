@@ -1,0 +1,17 @@
+Ludwig Wittgenstein define “Jogos de Linguagem” como a ideia de que o significado das palavras surge do 
+modo como elas são usadas em práticas sociais específicas, ou seja, a linguagem funciona conforme regras
+compartilhadas dentro de cada contexto. Assim como em um jogo, cada situação possui normas próprias que 
+orientam a comunicação e dão sentido às expressões utilizadas. No ensino, esse conceito ajuda a compreender
+que aprender não é apenas memorizar definições, mas participar de contextos reais de uso, onde o 
+estudante desenvolve entendimento ao aplicar conceitos em situações práticas. Dessa forma, o professor 
+atua como mediador, criando experiências em que o aluno aprende pela interação, interpretação e prática 
+contextualizada. No campo educacional, Jogos de Linguagem favorecem metodologias ativas, pois estimulam 
+raciocínio, comunicação e construção de significado de forma mais dinâmica. Na Programação Orientada a 
+Objetos (POO), por exemplo, podemos observar esse conceito quando usamos termos como “classe”, “objeto”, 
+“herança” e “encapsulamento”. Essas palavras possuem significados específicos dentro do “jogo” da 
+programação, seguindo regras próprias da área. Um exemplo prático ocorre ao ensinar uma classe “Carro”: 
+fora da programação, carro é apenas um veículo; na POO, “Carro” pode representar um molde com atributos 
+como cor e modelo, e métodos como acelerar ou frear. O aluno aprende esse jogo de linguagem ao compreender
+como esses termos funcionam dentro do sistema lógico da programação. Portanto, os Jogos de Linguagem 
+mostram que o conhecimento depende do contexto e do uso, sendo essenciais tanto para a educação quanto 
+para a aprendizagem de conceitos técnicos como os da programação.

@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rodrigo"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/headline_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/student_name"
+        android:layout_marginTop="8dp"
+        android:text="Title"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/headline_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headline_title"
+        android:layout_marginTop="8dp"
+        android:text="Description"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/widget_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/headline_description"
+        android:layout_marginTop="12dp"
+        android:scaleType="fitCenter"
+        android:src="@android:drawable/star_big_on"
+        tools:visibility="visible" />
+
+</RelativeLayout>
